@@ -79,10 +79,10 @@ int main(void){
     return 0 ;
 }
 void upCastCheck(){
-    
+
     unsigned int before_value ;
     unsigned short tobe_value ;
-    
+
     //unsigned
     if (( before_value >= (2^(sizeof(tobe_value)*8)-1))){
         //error 출력
@@ -91,25 +91,25 @@ void upCastCheck(){
     else{
         tobe_value = (unsigned short)before_value ;
     }
-    
+
 }
 void downCasting(){
-    
+
     short before1 ;
     int after1 ;
     short before2 ;
     int after2 ;
-    
+
     before1 = 1 ;
     printf("before1 : %8x \n", before1) ;
     after1 = before1 ;
     printf("after1 : %8x \n", after1) ;
-    
+
     before2 = -1 ;
     printf("before2 : %8x \n", before2) ;
     after2 = before2 ;
     printf("after2 : %8x \n", after2) ;
-    
+
     return ;
 }
 //Saturation code
@@ -122,23 +122,23 @@ if ( before >= 32768 ){
 
 
 void upCasting(){
-    
+
     short after1;
     int before1 ;
     short after2 ;
     int before2 ;
-    
+
     before1 = 0x7FFFFFFF ; // 2147483647
     printf("before1 : >%x \n", before1) ;
     after1 = before1 ;
     printf("after1  : >%x \n", after1) ;
-    
+
     before2 = 0x80000000 ; //-2147483648
     printf("before2 : >%x \n", before2) ;
     after2 = before2 ;
     printf("after2  : >%x \n", after2) ;
-    
-    
-    
+
+
+
     return ;
 }
